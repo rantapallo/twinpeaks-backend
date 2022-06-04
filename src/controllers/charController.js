@@ -21,7 +21,7 @@ const getCharacterById = (req, res) => {
 }
 
 const getCharacterByName = (req, res) => {
-  const regex = new RegExp(req.query.char, 'i')
+  const regex = new RegExp(req.params.name, 'i')
   Character.find({character: {$regex: regex}})
     .then((result) => {
       res.status(200).json(result)
