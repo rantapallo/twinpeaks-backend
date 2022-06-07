@@ -32,8 +32,8 @@ To get a random quote
 
 	[
 	  {
-		"Quote": "I have no idea where this will lead us, but I have a definite feeling it will be a place both wonderful and strange.",
-		"Character": "Dale Cooper"
+		"quote": "I have no idea where this will lead us, but I have a definite feeling it will be a place both wonderful and strange.",
+		"character": "Dale Cooper"
       }
 	]
   
@@ -45,8 +45,8 @@ To get a random quote by a specific character
 
 	[
 	  {
-		"Quote": "My Log Does Not Judge.",
-		"Character": ""Log Lady"
+		"quote": "My Log Does Not Judge.",
+		"character": ""Log Lady"
       }
 	]
 
