@@ -7,8 +7,8 @@ const getRandomQuote = (req, res) => {
       Quote.findOne({quoteid: random})
         .then((result) => {
           res.status(200).json({
-            "Quote": result.quote, 
-            "Character": result.character
+            "quote": result.quote, 
+            "character": result.character
           })
         })
         .catch((err) => {
@@ -24,8 +24,8 @@ const getRandomQuoteByChar = (req, res) => {
       let random = Math.floor((Math.random() * countResults))
       let randomQuote = results[random]
       res.status(200).json({
-        "Quote": randomQuote.quote,
-        "Character": randomQuote.character
+        "quote": randomQuote.quote,
+        "character": randomQuote.character
       })
     })
     .catch((err) => {

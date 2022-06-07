@@ -6,10 +6,6 @@ const quoteSchema = mongoose.Schema(
     quote: String,
     character: String,
     charid: Number
-    // charid: {
-    //   type: mongoose.Schema.Types.ObjectId,
-    //   ref: 'Character'
-    // }
   }
 )
 

@@ -2,7 +2,20 @@ const Character = require('../models/charModel')
 
 const getCharacters = (req, res) => {
   Character.find()
-    .then((result) => {
+    .then((data) => {
+      let result = data.map((char) => {
+        return ({
+          charid: char.charid, 
+          character: char.character, 
+          portrayed: char.portrayed, 
+          img: char.img, 
+          partof: char.partof,
+          occupation: char.occupation, 
+          aka: char.aka, 
+          born: char.born, 
+          appearances: char.appearances
+        })
+      })
       res.status(200).json(result)
     })
     .catch((err) => {
@@ -12,7 +25,20 @@ const getCharacters = (req, res) => {
 
 const getCharacterById = (req, res) => {
   Character.find({charid: req.params.id})
-    .then((result) => {
+    .then((data) => {
+      let result = data.map((char) => {
+        return ({
+          charid: char.charid, 
+          character: char.character, 
+          portrayed: char.portrayed, 
+          img: char.img, 
+          partof: char.partof,
+          occupation: char.occupation, 
+          aka: char.aka, 
+          born: char.born, 
+          appearances: char.appearances
+        })
+      })
       res.status(200).json(result)
     })
     .catch((err) => {
@@ -23,7 +49,20 @@ const getCharacterById = (req, res) => {
 const getCharacterByName = (req, res) => {
   const regex = new RegExp(req.params.name, 'i')
   Character.find({character: {$regex: regex}})
-    .then((result) => {
+    .then((data) => {
+      let result = data.map((char) => {
+        return ({
+          charid: char.charid, 
+          character: char.character, 
+          portrayed: char.portrayed, 
+          img: char.img, 
+          partof: char.partof,
+          occupation: char.occupation, 
+          aka: char.aka, 
+          born: char.born, 
+          appearances: char.appearances
+        })
+      })
       res.status(200).json(result)
     })
     .catch((err) => {
