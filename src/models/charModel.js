@@ -4,7 +4,7 @@ const charSchema = mongoose.Schema(
   {
     charid: Number,
     character: String,
-    actor: String,
+    portrayed: String,
     aka: String,
     born: Date,
     partof: String,
