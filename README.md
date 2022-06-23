@@ -16,7 +16,7 @@ To find a specific character by name
 
 ### `GET /api/characters/search/{name}`
 
-> [https://twinpeaks-api.herokuapp.com/api/characters/name/cooper](https://twinpeaks-api.herokuapp.com/api/characters/name/cooper)
+> [https://twinpeaks-api.herokuapp.com/api/characters/search/cooper](https://twinpeaks-api.herokuapp.com/api/characters/search/cooper)
 
 To find a specific character by id
 
