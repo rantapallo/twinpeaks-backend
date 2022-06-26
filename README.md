@@ -78,10 +78,10 @@ To get the list of movies
 
 ### `GET /api/movies`
 
-> [https://twinpeaks-api.herokuapp.com/api/movies](https://twinpeaks-api.herokuapp.com/api/episodes/movies)
+> [https://twinpeaks-api.herokuapp.com/api/movies](https://twinpeaks-api.herokuapp.com/api/movies)
 
 To get a specific movie
 
 ### `GET /api/movies/{no}`
 
-> [https://twinpeaks-api.herokuapp.com/api/movies/1](https://twinpeaks-api.herokuapp.com/api/episodes/movies/1)
+> [https://twinpeaks-api.herokuapp.com/api/movies/1](https://twinpeaks-api.herokuapp.com/api/movies/1)
