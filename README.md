@@ -12,18 +12,18 @@ To get the list of characters
 
 > [https://twinpeaks-api.herokuapp.com/api/characters](https://twinpeaks-api.herokuapp.com/api/characters)
 
-[
-	{
-		"charid": 1,
-		"character": "Dale Cooper",
-		"portrayed": "Kyle MacLachlan",
-		"img": "https://vignette.wikia.nocookie.net/twinpeaks/images/8/81/Dale_Cooper_(2010s).jpg",
-		"partof": "FBI",
-		"occupation": "FBI Special Agent",
-		"aka": "Coop",
-		"born": "1954-04-19T00:00:00.000Z"
-	}
-]
+	[
+		{
+			"charid": 1,
+			"character": "Dale Cooper",
+			"portrayed": "Kyle MacLachlan",
+			"img": "https://vignette.wikia.nocookie.net/twinpeaks/images/8/81/Dale_Cooper_(2010s).jpg",
+			"partof": "FBI",
+			"occupation": "FBI Special Agent",
+			"aka": "Coop",
+			"born": "1954-04-19T00:00:00.000Z"
+		}
+	]
 
 To find a specific character by name
 
@@ -43,12 +43,12 @@ To get a random quote
 
 > [https://twinpeaks-api.herokuapp.com/api/quotes](https://twinpeaks-api.herokuapp.com/api/quotes)
 
-[
-	{
-		"quote": "I have no idea where this will lead us, but I have a definite feeling it will be a place both wonderful and strange.",
-		"character": "Dale Cooper"
-	}
-]
+	[
+		{
+			"quote": "I have no idea where this will lead us, but I have a definite feeling it will be a place both wonderful and strange.",
+			"character": "Dale Cooper"
+		}
+	]
   
 To get a random quote by a specific character
 
@@ -56,12 +56,12 @@ To get a random quote by a specific character
 
 > [https://twinpeaks-api.herokuapp.com/api/quotes/char/10](https://twinpeaks-api.herokuapp.com/api/quotes/char/10)
 
-[
-	{
-		"quote": "My Log Does Not Judge.",
-		"character": ""Log Lady"
-	}
-]
+	[
+		{
+			"quote": "My Log Does Not Judge.",
+			"character": ""Log Lady"
+		}
+	]
 
 To get the list of episodes
 
@@ -112,21 +112,21 @@ To get the list of movies
 
 > [https://twinpeaks-api.herokuapp.com/api/movies](https://twinpeaks-api.herokuapp.com/api/movies)
 
-[
-	{
-		"no": 2,
-		"title": "Twin Peaks: The Missing Pieces",
-		"directed": [
-    	"David Lynch"
-		],
-		"written": [
-  		"David Lynch",
-    	"Robert Engels"
-		],
-		"release_date": "2014-07-16T00:00:00.000Z",
-		"summary": "Twin Peaks before Twin Peaks (1990) and at the same time not always and entirely in the same place as Twin Peaks: Fire Walk with Me (1992). A feature film which presents deleted scenes from Twin Peaks: Fire Walk with Me (1992) assembled together for the first time in an untold portion of the story's prequel."
-	}
-]
+	[
+		{
+			"no": 2,
+			"title": "Twin Peaks: The Missing Pieces",
+			"directed": [
+				"David Lynch"
+			],
+			"written": [
+				"David Lynch",
+				"Robert Engels"
+			],
+			"release_date": "2014-07-16T00:00:00.000Z",
+			"summary": "Twin Peaks before Twin Peaks (1990) and at the same time not always and entirely in the same place as Twin Peaks: Fire Walk with Me (1992). A feature film which presents deleted scenes from Twin Peaks: Fire Walk with Me (1992) assembled together for the first time in an untold portion of the story's prequel."
+		}
+	]
 
 To get a specific movie
 
