@@ -50,3 +50,38 @@ To get a random quote by a specific character
       }
 	]
 
+To get the list of episodes
+
+### `GET /api/episodes`
+
+> [https://twinpeaks-api.herokuapp.com/api/episodes](https://twinpeaks-api.herokuapp.com/api/episodes)
+
+To get the list of episodes of specific season
+
+### `GET /api/episodes/{season}`
+
+> [https://twinpeaks-api.herokuapp.com/api/episodes/season/3](https://twinpeaks-api.herokuapp.com/api/episodes/season/3)
+
+To get details of a specific episode using number of episode
+
+### `GET /api/episodes/episode/{no}`
+
+> [https://twinpeaks-api.herokuapp.com/api/episodes/episode/35](https://twinpeaks-api.herokuapp.com/api/episodes/episode/35)
+
+To get details of a specific episode using season/episode
+
+### `GET /api/episodes/season/{season}/episode/{episode}`
+
+> [https://twinpeaks-api.herokuapp.com/api/episodes/season/2/episode/4](https://twinpeaks-api.herokuapp.com/api/episodes/season/2/episode/4)
+
+To get the list of movies
+
+### `GET /api/movies`
+
+> [https://twinpeaks-api.herokuapp.com/api/movies](https://twinpeaks-api.herokuapp.com/api/episodes/movies)
+
+To get a specific movie
+
+### `GET /api/movies/{no}`
+
+> [https://twinpeaks-api.herokuapp.com/api/movies/1](https://twinpeaks-api.herokuapp.com/api/episodes/movies/1)

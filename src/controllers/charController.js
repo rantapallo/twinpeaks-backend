@@ -1,7 +1,8 @@
 const Character = require('../models/charModel')
 
 const getCharacters = (req, res) => {
-  Character.find()
+
+    Character.find().sort('charid')
     .then((data) => {
       let result = data.map((char) => {
         return ({
@@ -13,7 +14,7 @@ const getCharacters = (req, res) => {
           occupation: char.occupation, 
           aka: char.aka, 
           born: char.born, 
-          appearances: char.appearances
+          //appearances: char.appearances
         })
       })
       res.status(200).json(result)
@@ -36,7 +37,7 @@ const getCharacterById = (req, res) => {
           occupation: char.occupation, 
           aka: char.aka, 
           born: char.born, 
-          appearances: char.appearances
+          // appearances: char.appearances
         })
       })
       res.status(200).json(result)
@@ -60,7 +61,7 @@ const getCharacterByName = (req, res) => {
           occupation: char.occupation, 
           aka: char.aka, 
           born: char.born, 
-          appearances: char.appearances
+          // appearances: char.appearances
         })
       })
       res.status(200).json(result)

@@ -2,26 +2,32 @@ const mongoose = require('mongoose')
 
 const charSchema = mongoose.Schema(
   {
-    charid: Number,
-    character: String,
-    portrayed: String,
-    aka: String,
-    born: Date,
-    partof: String,
-    img: String,
-    occupation: String,
-    appearances: {
-      "Season 1": [
-        Number
-      ],
-      "Season 2": [
-        Number
-      ],
-      "Season 3": [
-        Number
-      ]
+    charid: {
+      type: Number
+    },
+    character: {
+      type: String
+    },
+    portrayed: {
+      type: String
+    },
+    aka: {
+      type: String
+    },
+    born: {
+      type: Date
+    },
+    partof: {
+      type: String
+    },
+    img: {
+      type: String
+    },
+    occupation: {
+      type: String
     }
   }
 )
+
 
 module.exports = mongoose.model('Character', charSchema)
