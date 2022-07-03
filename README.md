@@ -1,9 +1,6 @@
 # Twin Peaks API
 API to fetch Twin Peaks information about Twin Peaks episodes, movies, quotes and characters
 
-## Website
-https://twinpeaks-api.herokuapp.com
-
 ## Usage
 
 To get the list of characters
